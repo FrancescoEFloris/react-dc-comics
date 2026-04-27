@@ -9,7 +9,7 @@ function FooterNavbarItem() {
     return (
         <section className="bg-primary">
             {items.map((item) => (
-                <a href=""><img src={item.img} alt="" /> {item.name} </a>
+                <a key={item.img} href=""><img src={item.img} alt="" /> {item.name} </a>
             ))}
         </section>
     );
