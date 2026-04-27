@@ -46,7 +46,7 @@ function FooterNavLinks() {
             ]
         },
     ]
-    return <>
+    return <div className="links-section">
         {navLinkSections.map((section) => (
             <div>
                 <h3>{section.name}</h3>
@@ -59,7 +59,8 @@ function FooterNavLinks() {
                 </ul>
             </div>
         ))}
-    </>;
+        <img src="/imgs/dc-logo-bg.png" alt="" />
+    </div>;
 }
 
 export default FooterNavLinks;

@@ -4,12 +4,21 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 /*Utility*/
 .bg-black {
   background-color: black;
   color: white;
 }
+
 .bg-primary {
   background-color: rgb(43, 120, 207);
   color: white;
+}
+
+/*Style*/
+.links-section {
+  background-image: url("/imgs/footer-bg.jpg");
+  background-size: cover;
+  background-position: center;
 }
