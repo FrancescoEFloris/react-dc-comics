@@ -17,7 +17,7 @@ function HeaderNavbarItem() {
     return (
         <>
             {items.map((item) => (
-                <a href="">{item.name}</a>
+                <a href=""> {item.name} </a>
             ))}
         </>
     );
