@@ -1,15 +1,11 @@
+import items from '../data/footnavitem.js';
+
 function FooterNavbarItem() {
-        const items = [
-        { name: "DIGITAL COMICS", img: "/imgs/buy-comics-digital-comics.png" },
-        { name: "DC MERCHANDISE", img: "/imgs/buy-comics-merchandise.png" },
-        { name: "SUBSCRIPTION", img: "/imgs/buy-comics-subscriptions.png" },
-        { name: "COMIC SHOP LOCATOR", img: "/imgs/buy-comics-shop-locator.png" },
-        { name: "DC POWER VISA", img: "/imgs/buy-dc-power-visa.svg" },
-    ];
+        
     return (
-        <section className="bg-primary">
+        <section className="bg-primary foot-shop-container">
             {items.map((item) => (
-                <a key={item.img} href=""><img src={item.img} alt="" /> {item.name} </a>
+                <a className='foot-shop-anch' key={item.id} href=""><img className='foot-shop-img' src={item.img} alt="" /> <span className='foot-shop-label'>{item.name}</span> </a>
             ))}
         </section>
     );
