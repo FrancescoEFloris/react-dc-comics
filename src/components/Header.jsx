@@ -1,8 +1,8 @@
 import HeaderNavbarItem from './HeaderNavbarItem.jsx';
 
 function Header() {
-    return <header>
-        <a href=""><img src="/imgs/dc-logo.png" alt="" /></a>
+    return <header className='head-wrapper sticky-top'>
+        <a href=""><img className='head-logo' src="/imgs/dc-logo.png" alt="" /></a>
         <HeaderNavbarItem />
     </header>;
 }

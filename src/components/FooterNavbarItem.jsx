@@ -1,12 +1,21 @@
 import items from '../data/footnavitem.js';
 
 function FooterNavbarItem() {
-        
+
     return (
-        <section className="bg-primary foot-shop-container">
-            {items.map((item) => (
-                <a className='foot-shop-anch' key={item.id} href=""><img className='foot-shop-img' src={item.img} alt="" /> <span className='foot-shop-label'>{item.name}</span> </a>
-            ))}
+        <section className="wrapper bg-primary p-4">
+            <div className="container foot-shop-container">
+                <div className='row row-cols-5'>
+                    {items.map((item) => (
+                        <div className="col text-center" key={item.id}>
+                            <a className='foot-shop-anch' href="">
+                                <img className='foot-shop-img p-1' src={item.img} alt="" />
+                                <span className='foot-shop-label text-white'>{item.name}</span>
+                            </a>
+                        </div>
+                    ))}
+                </div>
+            </div>
         </section>
     );
 }
