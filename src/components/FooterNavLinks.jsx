@@ -1,13 +1,11 @@
-import navLinkSections from '../data/footnavlink';
-
-function FooterNavLinks() {
+function FooterNavLinks({ navLinks }) {
     return (
         <div className="container-fluid links-section">
             <div className="container">
                 <div className="row justify-content-between">
                     <div className="col">
                         <div className="row row-cols-3">
-                            {navLinkSections.map((section) => (
+                            {navLinks.map((section) => (
                                 <div className="foot-link-section" key={section.id}>
                                     <h3 className='text-white'>{section.name}</h3>
                                     <ul>

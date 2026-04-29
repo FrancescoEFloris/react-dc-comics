@@ -1,10 +1,8 @@
-import items from '../data/headnavitem';
-
-function HeaderNavbarItem() {
+function HeaderNavbarItem({ navItems }) {
 
     return (
         <div className='head-nav-container'>
-            {items.map((item) => (
+            {navItems.map((item) => (
                 <a className='head-anch' key={item.id} href=""> {item.name} </a>
             ))}
         </div>
